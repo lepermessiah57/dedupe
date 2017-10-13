@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '1.5.7.RELEASE'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    compile 'org.mongodb:mongo-java-driver:3.4.3'
+
+
+    testCompile 'junit:junit:4.12'
+}
+
